@@ -3,12 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         let userInput = document.getElementById('numero-maximo').value;
         userInput = parseInt(userInput);
-        
         let numeroSorteado = userInput * Math.random() + 1;
-        
-        Math.floor(numeroSorteado)
-
+        Math.floor(numeroSorteado);
         document.getElementById('resultado-valor').innerText = Math.floor(numeroSorteado);
+        document.querySelector('.resultado').style.display = 'block';
     })
     
 })
